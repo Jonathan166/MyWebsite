@@ -33,7 +33,6 @@
                 padding-left: 70px;
             }
             nav ul{
-                list-style: none;
                 margin: 0;
                 padding-left: 50px;
             }
@@ -55,9 +54,7 @@
             nav ul li a:hover{
                 background-color: #41d0f0;
             }
-            .left-column{
-                width: 50%;
-                float: left;
+            .openStatement {
                 margin: 1% 2% 2% 2%;
             }
             .sidebar{
@@ -71,16 +68,54 @@
                 margin: 2% 2%;
                 text-align: center;
             }
-            .foot{
+            .footer {
                 background-color: #758697;
                 width:100%;
                 overflow: hidden;
             }
-            .foot p{
+            .footer p{
                 color:white;
                 text-decoration: none;
                 text-align:center;
+                font-size: 25px;
             }
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            li{
+                display: inline;
+            }
+
+            @media screen and (max-width: 450px){
+                body{
+                    font-size: 12px;
+                }
+            }
+            @media screen and (max-width: 750px) {
+                nav{
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                nav ul{
+                    list-style: none;
+                    margin: 0 auto;
+                    padding-left: 0;
+                }
+                nav ul li{
+                    text-align: center;
+                    width: 100%;
+                    border-top: 1px solid dimgrey;
+                    border-bottom: none;
+                    border-left: none;
+                    border-right: none;
+                }
+                nav ul li a{
+                    padding: 8px 0;
+                }
+            }
+
         </style>
     </head>
     <body>
@@ -96,13 +131,9 @@
                     <li><a href="#">About me</a></li>
                 </ul>
             </nav>
-            <div class="home">
-                <img src="http://150175161.homesconnect.com/AccountData/150175161/467517581.jpg"/>
-            </div>
-            <section class="left-column">
-                <p style="text-indent: 70px">Welcome to my profile website. I've created this site from scratch as a personal project and goal of mine. I have recently undergone a major career change and am building a portfolio of
-                    projects to showcase to potential employers. Please take a look around and feel free to post any comments or questions you may have.</p>
-                <p style="text-indent: 70px">Progress = Happiness is a wonderful belief I'm referencing from Anthony Robbins. I attended one of his seminars years ago and have lived by this belief ever since.</p>
+            <section class="openStatement">
+                <p style="text-indent: 50px">Welcome to my profile website. I've created this site from scratch as a personal project and goal of mine. Please take a look around and feel free to post any comments or questions you may have.</p>
+                <p style="text-indent: 50px">Progress = Happiness is a wonderful belief I'm referencing from Anthony Robbins. I attended one of his seminars years ago and have lived by this belief ever since.</p>
             </section>
             <aside class="sidebar">
                 <div class="profile">
@@ -131,15 +162,15 @@
             </div>
 
             <footer>
-                <div class="foot" >
-                    <p>Please submit any suggestions for building a better website or questions you may have.  Thank you for stopping by.</p>
+                <div class="footer" >
+                    <p>Please submit any suggestions for building a better website or questions you may have.
+                        Thank you for stopping by.</p>
                 </div>
 
-                <div class="foot2" >
+                <div class="socialLinks">
                     <ul>
                         <li><a href="https://github.com/Jonathan166"><img src="https://github-jobs.s3.amazonaws.com/168d1ca6-dd19-11e2-8a2e-153f588b3d80.png" height="100" width="100"/></a></li>
                         <li><a href="https://www.linkedin.com/in/jonathan-langford-304281b8"><img src="https://pbs.twimg.com/profile_images/614583061448036352/CBpFkPaz.png" height="100" width="100"/></a></li>
-
                     </ul>
                 </div>
             </footer>
